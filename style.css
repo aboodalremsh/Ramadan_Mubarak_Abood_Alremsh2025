@@ -85,11 +85,10 @@ body {
 }
 
 
-
 .ramadan-text {
     position: absolute;
-    top: 200px;  
-    right: 200px;
+    top: 20%;  
+    right: 20%;
     font-size: 5rem;
     font-weight: bold;
     color: gold;
@@ -97,6 +96,24 @@ body {
     opacity: 0;
     transform: translateY(-100px);
     transition: transform 1.5s ease-out, opacity 1.5s;
+}
+
+/* For devices with a max-width of 768px (tablets and smaller) */
+@media screen and (max-width: 768px) {
+    .ramadan-text {
+        top: 10%;
+        right: 10%;
+        font-size: 4rem;
+    }
+}
+
+/* For devices with a max-width of 480px (phones and smaller) */
+@media screen and (max-width: 480px) {
+    .ramadan-text {
+        top: 10%;
+        right: 5%;
+        font-size: 3rem;
+    }
 }
 
 .fanous.on .crescent-moon,
